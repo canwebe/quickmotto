@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
+h1{
+    text-align: center;
+    margin: 70px auto 50px;
+    font-weight: 800;
+    color: blue;
+}
+
+
+
+div.wrapper{
+    width: 70%;
+    margin: 0 auto;
+   
+}
+
+.main{
+    padding: 40px;
+    border-radius: 7px 7px 30px 30px;
+    border-top: 10px solid blue;
+    box-shadow: 2px 3px 5px 2px rgba(90, 90, 90, 0.8);
+    min-height: 200px;
+}
+.quote{
+    font-size: 21px;
+    text-align: center;
+}
+
+h3{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 7px;
+}
+
+a{
+    background-color: cornflowerblue;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    width: 96%;
+    display: block;
+    text-align: center;
+    margin: 27px auto;
+    border-radius: 30px;
+    box-shadow: 2px 3px 5px rgba(66, 66, 66, 0.8);
+    transition:background-color  0.3s ease-in-out,all 0.1s ease-in-out;
+}
+
+a:hover{
+    background-color: rgb(37, 65, 221);
+}
+
+a:active{
+    transform: translateY(3px);
+    background-color: rgb(32, 47, 131);
+    box-shadow: 2px 2px 4px rgba(78, 78, 78, 0.8);
+}
+
+h4{
+    text-align: center;
+}
