@@ -6,13 +6,14 @@
 
 body{
     font-family: 'Nunito', sans-serif;
+    background-color: rgb(194, 192, 189);
 }
 
 h1{
     text-align: center;
     margin: 70px auto 50px;
     font-weight: 800;
-    color: blue;
+    color: rgb(255, 255, 255);
 }
 
 
