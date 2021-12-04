@@ -23,9 +23,11 @@ body {
 }
 
 .mainWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 92vh;
   max-width: 1800px;
-  margin: 0 auto;
-  padding: 70px 0;
 }
 
 h1 {
@@ -40,7 +42,7 @@ h1::after {
   width: 90px;
   background-color: #ff5f5f;
   display: block;
-  margin: 3px auto 70px;
+  margin: 3px auto 56px;
   border-radius: 99px;
 }
 
@@ -132,21 +134,11 @@ MEDIA QUERY
   div.wrapper {
     width: 80%;
   }
-  .mainWrapper {
-    padding-top: 80px;
-  }
 }
 
 @media only screen and (max-width: 600px) {
   div.wrapper {
     width: 90%;
-  }
-  .mainWrapper {
-    padding-top: 90px;
-    padding-bottom: 60px;
-  }
-  h1::after {
-    margin-bottom: 56px;
   }
   .main {
     min-height: 226px;
@@ -154,9 +146,6 @@ MEDIA QUERY
 }
 
 @media only screen and (max-width: 380px) {
-  .mainWrapper {
-    padding-top: 40px;
-  }
   h1::after {
     margin-bottom: 40px;
   }
@@ -178,9 +167,6 @@ MEDIA QUERY
   .btn {
     font-size: 16px;
     padding: 9px;
-  }
-  .mainWrapper {
-    padding-top: 30px;
   }
   h1::after {
     margin-bottom: 30px;
