@@ -3,13 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  -webkit-tap-highlight-color: transparent;
+}
 
 body {
   font-family: 'Nunito', sans-serif;
   background-color: rgb(194, 192, 189);
   background-image: linear-gradient(
-      rgba(202, 202, 202, 0.9),
-      rgba(202, 202, 202, 0.9)
+      rgba(202, 202, 202, 0.87),
+      rgba(202, 202, 202, 0.87)
     ),
     url('background.webp');
   background-position: center;
@@ -27,7 +30,7 @@ body {
 h1 {
   text-align: center;
   font-size: 39px;
-  color: rgb(71, 34, 238);
+  color: blue;
 }
 
 h1::after {
