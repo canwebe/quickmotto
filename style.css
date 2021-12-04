@@ -1,71 +1,180 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: 'Nunito', sans-serif;
-    background-color: rgb(194, 192, 189);
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: rgb(194, 192, 189);
+  background-image: linear-gradient(
+      rgba(202, 202, 202, 0.9),
+      rgba(202, 202, 202, 0.9)
+    ),
+    url('background.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
 
-h1{
-    text-align: center;
-    margin: 70px auto 50px;
-    font-weight: 800;
-    color: rgb(255, 255, 255);
+.mainWrapper {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 70px 0;
 }
 
-
-
-div.wrapper{
-    width: 70%;
-    margin: 0 auto;
-   
+h1 {
+  text-align: center;
+  font-size: 39px;
+  color: rgb(71, 34, 238);
 }
 
-.main{
-    padding: 40px;
-    border-radius: 7px 7px 30px 30px;
-    border-top: 10px solid blue;
-    box-shadow: 2px 3px 5px 2px rgba(90, 90, 90, 0.8);
-    min-height: 200px;
-}
-.quote{
-    font-size: 21px;
-    text-align: center;
+h1::after {
+  content: ' ';
+  height: 3px;
+  width: 90px;
+  background-color: #ff5f5f;
+  display: block;
+  margin: 3px auto 70px;
+  border-radius: 99px;
 }
 
-h3{
+div.wrapper {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.main {
+  padding: 40px;
+  border-radius: 7px 7px 30px 30px;
+  border-top: 10px solid blue;
+  box-shadow: 2px 3px 5px 2px rgba(90, 90, 90, 0.8);
+  min-height: 200px;
+  background-color: white;
+}
+.quote {
+  font-size: 21px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 7px;
+  color: blueviolet;
+}
+
+.btn {
+  background-color: rgb(87, 137, 231);
+  text-decoration: none;
+  color: white;
+  padding: 11px;
+  width: 97%;
+  display: block;
+  text-align: center;
+  margin: 27px auto;
+  border-radius: 30px;
+  box-shadow: 2px 3px 5px rgba(66, 66, 66, 0.8);
+  transition: background-color 0.25s ease-in-out, transform 0.1s ease-in-out,
+    box-shadow 0.1s ease-in-out;
+  font-size: 19px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(37, 65, 221);
+}
+
+.btn:active {
+  transform: translateY(3px);
+  transform: scale(0.99);
+
+  background-color: rgb(32, 47, 131);
+  box-shadow: 2px 2px 4px rgba(78, 78, 78, 0.8);
+}
+
+h4 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 300;
+  opacity: 0.45;
+  margin-top: 33px;
+}
+
+.footer {
+  background-color: rgb(34, 34, 34);
+  color: rgb(204, 204, 204);
+  padding: 14px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  font-size: 15px;
+  left: 0;
+  right: 0;
+}
+.footer a {
+  text-decoration: none;
+  color: rgb(204, 204, 204);
+  font-weight: 700;
+}
+
+/* ===========
+MEDIA QUERY
+=========== */
+
+@media only screen and (max-width: 1000px) {
+  div.wrapper {
+    width: 80%;
+  }
+  .mainWrapper {
+    padding-top: 80px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  div.wrapper {
+    width: 90%;
+  }
+  .mainWrapper {
+    padding-top: 90px;
+  }
+  h1::after {
+    margin-bottom: 56px;
+  }
+  .main {
+    min-height: 226px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .mainWrapper {
+    padding-top: 40px;
+  }
+  h1::after {
+    margin-bottom: 50px;
+  }
+  .main {
+    padding: 35px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  h1 {
+    font-size: 30px;
+  }
+  .quote {
+    font-size: 17px;
+  }
+  .btn {
     font-size: 16px;
-    text-align: center;
-    margin-top: 7px;
-}
-
-a{
-    background-color: cornflowerblue;
-    text-decoration: none;
-    color: white;
-    padding: 10px;
-    width: 96%;
-    display: block;
-    text-align: center;
-    margin: 27px auto;
-    border-radius: 30px;
-    box-shadow: 2px 3px 5px rgba(66, 66, 66, 0.8);
-    transition:background-color  0.3s ease-in-out,all 0.1s ease-in-out;
-}
-
-a:hover{
-    background-color: rgb(37, 65, 221);
-}
-
-a:active{
-    transform: translateY(3px);
-    background-color: rgb(32, 47, 131);
-    box-shadow: 2px 2px 4px rgba(78, 78, 78, 0.8);
-}
-
-h4{
-    text-align: center;
+    padding: 9px;
+  }
+  .mainWrapper {
+    padding-top: 30px;
+  }
+  h1::after {
+    margin-bottom: 30px;
+  }
 }
