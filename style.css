@@ -19,6 +19,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
+  position: relative;
 }
 
 .mainWrapper {
@@ -111,7 +112,7 @@ h4 {
   color: rgb(204, 204, 204);
   padding: 14px;
   text-align: center;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   font-size: 15px;
   left: 0;
@@ -142,6 +143,7 @@ MEDIA QUERY
   }
   .mainWrapper {
     padding-top: 90px;
+    padding-bottom: 60px;
   }
   h1::after {
     margin-bottom: 56px;
@@ -151,13 +153,16 @@ MEDIA QUERY
   }
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 380px) {
   .mainWrapper {
     padding-top: 40px;
   }
   h1::after {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
+}
+
+@media only screen and (max-width: 360px) {
   .main {
     padding: 35px;
   }
