@@ -11,7 +11,7 @@ body {
       rgba(202, 202, 202, 0.9),
       rgba(202, 202, 202, 0.9)
     ),
-    url('background.jpg');
+    url('background.webp');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
